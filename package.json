@@ -1,0 +1,44 @@
+{
+  "name": "vboxmanager",
+  "description": "Manage virtulbox",
+  "version": "0.0.1",
+  "author": {
+    "name": "Xavier TALANDIER",
+    "email": "xavier@talandier.fr"
+  },
+  "contributors": [
+    {
+      "name": "Xavier TALANDIER",
+      "email": "xavier@talandier.fr"
+    }
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "supertest": "0.6.0"
+  },
+  "keywords": [
+    "virtualbox",
+    "cloud",
+    "virtual",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/visionmedia/express"
+  },
+  "main": "index",
+  "bin": {
+    "vboxmanager": "./bin/vboxmanager"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "make test"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "readmeFilename": "Readme.md"
+}
