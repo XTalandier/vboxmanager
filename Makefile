@@ -2,9 +2,8 @@ MOCHA_REPORTER = spec
 UNIT_TESTS = $(shell find test/ -name "*.test.js")
 
 
-all: spec
 
-spec:
+test:
 	clear
 	@NODE_ENV=test ./node_modules/.bin/mocha \
 		--require should \
@@ -15,4 +14,4 @@ spec:
 		$(UNIT_TESTS)
 
 
-.PHONY: spec
+.PHONY: test
