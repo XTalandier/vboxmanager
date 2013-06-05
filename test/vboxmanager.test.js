@@ -83,3 +83,22 @@ describe('VBoxManager Scenarios',function(){
     });
   });
 });
+
+var boxInfos = null;
+describe('VBoxManager Configure VM' , function(){
+  it('should upgrate the memory to 100M' , function(done){
+    box.setMemory(100 , function(error){
+      error.should.equal.false;
+      done();
+    });
+  });
+  it('should upgrate the number of cpus to 3' , function(done){
+    box.setCPUS(3 , function(error){
+      error.should.equal.false;
+      done();
+    });
+  });
+});
+
+
+
