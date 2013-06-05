@@ -8,6 +8,7 @@ test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \
 		--require should \
 		--globals prop \
+		--timeout 15000 \
 		--reporter $(MOCHA_REPORTER) \
 		--slow 50 \
 		--growl \
