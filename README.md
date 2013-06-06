@@ -15,7 +15,7 @@ With it, you can:
     $ npm install vboxmanager
 
 ## Example
-```javascript
+````javascript
 var vbox = require('vboxmanager').vboxmanager;
 vbox.getVMS(function(
   // Get the first VM 
@@ -40,7 +40,7 @@ vbox.getVMS(function(
   });
 });
 
-```
+````
 
 
 ## Running tests
