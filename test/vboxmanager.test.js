@@ -5,10 +5,6 @@ var vbox    = require('../').vboxmanager
 var myVMS = [];
 var box   = null;
 
-var waitPlease = function(callback){
-  setTimeout(callback , 2000);
-}
-
 describe('VBoxManager' ,  function(){
   describe('VBoxManager basic',function(){
     describe('#getVMS',function(){
