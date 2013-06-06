@@ -30,9 +30,6 @@
     "url": "git://github.com/xtalandier/vboxmanager"
   },
   "main": "index",
-  "bin": {
-    "vboxmanager": "./bin/vboxmanager"
-  },
   "scripts": {
     "prepublish": "npm prune",
     "test": "make test"
