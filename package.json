@@ -12,10 +12,10 @@
       "email": "xavier@talandier.fr"
     }
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "*",
+    "remote-exec": "0.0.3",
     "should": "*",
     "supertest": "0.6.0"
   },
