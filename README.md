@@ -42,12 +42,25 @@ vbox.getVMS(function(
 
 ````
 
+## Example for remote connection
+````javascript
+var vbox = require('vboxmanager').vboxmanager;
+vbox.setRemote('10.8.0.X',
+    {
+        username: 'userrunningvbox',
+        passphrase: 'somePasswordIfAny',
+        privateKey: require('fs').readFileSync('/home/userrunningnodejs/.ssh/id_rsa')
+    }
+);
+````
 
 ## Running tests
 
 To run the tests for _vboxmanager_ simply run:
 
     $ make test
+    
+To run _remote_ tests edit /test/config.js
 
 
 ##License
