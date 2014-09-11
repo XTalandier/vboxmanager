@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - "0.11"
-  - "0.10"
-  - "0.8"
-  - "0.6"
+before_install:
+ - sudo apt-get update
+ - sudo apt-get --fix-missing
+ - sudo apt-get upgrade 
+ - sudo apt-get install linux-headers-generic
+ - sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian '$(lsb_release -cs)' contrib non-free' > /etc/apt/sources.list.d/virtualbox.list" && wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - 
+ - sudo apt-get install virtualbox virtualbox-qt virtualbox-dkms virtualbox-guest-dkms virtualbox-ose-dkms
+ - npm install -d
